@@ -20,7 +20,7 @@ It represents the main assignment of the 2nd week, out of the 4 weeks of this co
 
 <h3>Preview</h3>
 
-https://alexgtraining.github.io/fdc_second_main_assignment/
+https://kiranali25.github.io/Static-webpages/
 
 <h3>Considerations</h3>
 
