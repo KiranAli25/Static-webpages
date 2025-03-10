@@ -1,0 +1,139 @@
+:root {
+    --main-bg-color: #1F2937;
+    --main-txt-color: #F9FAF8;
+    --secondary-txt-color: #E5E7EB;
+    --action-bg-color: #3882F6;
+    --value-txt-color: #4B5563;
+    --sign-up-form-bg-color: white;
+    --submit-btn-gb: #2563eb;
+    --main-txt: 3rem;
+    --info-txt: 2.25rem;
+    --header-txt: 1.5rem;
+    --secondary-txt: 1.125rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #e9ecef;
+}
+
+.product-box {
+    flex: 0 1 calc(40% - 5px);
+    margin: 10px;
+    background: lightblue;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s;
+}
+
+.product-box:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.3s;
+    width: auto;
+}
+
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 600px) {
+    .product-box {
+        flex: 0 1 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-container>.product-box {
+    flex: 1 1 calc(50% - 10px);
+    margin: 2%;
+    max-width: calc(45% - 10px);
+}
+
+header {
+    background-color: var(--main-bg-color);
+    padding: 2rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--secondary-txt-color);
+    font-size: var(--secondary-txt);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 2rem;
+    padding-left: 2rem;
+}
+
+.products-header {
+    text-align: center;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 2rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--main-txt-color);
+    font-size: var(--header-txt);
+}
+
+footer {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

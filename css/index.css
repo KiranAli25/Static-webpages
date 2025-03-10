@@ -1,0 +1,115 @@
+.section-one {
+    padding: 4rem 0px 6rem 0px;
+    background-color: var(--main-bg-color);
+}
+
+.section-one .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.section-one h2 {
+    font-family: "Roboto-Extra-Bold", sans-serif;
+    font-size: var(--main-txt);
+    color: var(--main-txt-color);
+}
+
+.section-one p {
+    font-size: var(--secondary-txt);
+    color: var(--secondary-txt-color);
+}
+
+.section-one button {
+    margin-top: 1rem;
+    border-color: var(--action-bg-color);
+}
+
+.section-one .container-child {
+    flex: 1;
+}
+
+.section-one .container-child>div * {
+    max-width: 490px;
+}
+
+.section-two {
+    padding: 3rem 0px;
+    margin-bottom: 2rem;
+}
+
+.section-two article {
+    max-height: 75%;
+}
+
+.section-two .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem 1rem;
+    font-size: var(--secondary-txt);
+}
+
+.section-two h2 {
+    font-family: "Roboto-Extra-Bold", sans-serif;
+    font-size: var(--info-txt);
+    color: var(--main-bg-color);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section-two img,
+figcaption {
+    max-width: 11rem;
+    text-align: center;
+}
+
+.section-two figcaption {
+    color: var(--main-bg-color);
+}
+
+.section-two img {
+    border: 5px solid;
+    border-radius: 10%;
+    border-color: var(--action-bg-color);
+}
+
+.section-three {
+    padding: 8rem 0px;
+    background-color: var(--secondary-txt-color);
+}
+
+.section-three article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.section-three h2 {
+    font-family: "Roboto-Light-Italic", sans-serif;
+    font-size: var(--info-txt);
+    color: var(--main-bg-color);
+}
+
+.section-three .author {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+@media (max-width: 830px) {
+    .section-one .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .section-one .inner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
